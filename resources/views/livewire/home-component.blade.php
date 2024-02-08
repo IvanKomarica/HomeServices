@@ -415,6 +415,7 @@
                             <hr class="separator">
                             <p>Mattress Shampooing</p>
                             <div class="content-btn"><a href="service-details/mattress-shampooing.html"
+
                                                         class="btn btn-primary">Book Now</a></div>
                             <div class="price"><span>&#36;</span><b>From</b>222</div>
                         </div>
