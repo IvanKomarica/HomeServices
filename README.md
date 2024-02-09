@@ -1,6 +1,7 @@
 ## Made:
-- **created App\View\Components\BaseLayout.php** 
-- **changed resources\views\auth\login.blade.php** 
-- **changed resources\views\auth\register.blade.php** 
+- **created migration**  
+- **php artisan migrate**  
+- **changed resources\views\auth\register.blade.php**  
+- **changed  App\Actions\Fortify\CreateNewUser**  
 
 
