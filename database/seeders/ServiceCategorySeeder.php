@@ -83,6 +83,11 @@ class ServiceCategorySeeder extends Seeder
             [
                 "name" => "Geyser",
                 "slug" => 'geyser',
+                'image' => "1521969558.png",
+            ],
+            [
+                "name" => "Car",
+                "slug" => 'car',
                 'image' => "1521969576.png",
             ],
             [
