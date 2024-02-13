@@ -30,27 +30,41 @@
                 <div class="container">
                     <div class="row portfolioContainer">
                         <div class="col-md-12 profile1">
-                            <table class="table table-stripped">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Image</th>
-                                        <th>Name</th>
-                                        <th>Slug</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach($scategories as $scategory)
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            All Service Categories
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="{{ route('admin.add_service_category') }}" class="btn btn-info pull-right">Add new</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <table class="table table-stripped">
+                                        <thead>
                                         <tr>
-                                            <td>{{ $scategory->id }}</td>
-                                            <td><img src="{{ asset('images/categories') }}/{{$scategory->image }}" width="60" alt=""></td>
-                                            <td>{{ $scategory->name }}</td>
-                                            <td>{{ $scategory->slug }}</td>
+                                            <th>#</th>
+                                            <th>Image</th>
+                                            <th>Name</th>
+                                            <th>Slug</th>
                                         </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                            {{ $scategories->links() }}
+                                        </thead>
+                                        <tbody>
+                                        @foreach($scategories as $scategory)
+                                            <tr>
+                                                <td>{{ $scategory->id }}</td>
+                                                <td><img src="{{ asset('images/categories') }}/{{$scategory->image }}" width="60" alt=""></td>
+                                                <td>{{ $scategory->name }}</td>
+                                                <td>{{ $scategory->slug }}</td>
+                                            </tr>
+                                        @endforeach
+                                        </tbody>
+                                    </table>
+                                    {{ $scategories->links() }}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
