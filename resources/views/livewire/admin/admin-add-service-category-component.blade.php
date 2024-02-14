@@ -50,13 +50,13 @@
                                             <label for="slug" class="control-label col-sm-3">Category slug:</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name="slug" wire:model="slug">
-                                                @error('name') <p class="text-danger">{{ $message }}</p> @enderror
+                                                @error('slug') <p class="text-danger">{{ $message }}</p> @enderror
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="image" class="control-label col-sm-3">Category image:</label>
                                             <div class="col-sm-9">
-                                                <input type="file" class="form-contro-file" name="image" wire:model="image">
+                                                <input type="file" class="form-control-file" name="image" wire:model="image">
                                                 @error('image') <p class="text-danger">{{ $message }}</p> @enderror
                                                 @if($image)
                                                     <img src="{{ $image->temporaryUrl() }}" width="60">
