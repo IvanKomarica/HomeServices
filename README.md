@@ -1,3 +1,7 @@
 ## Made:
-- **changed app\Http\Livewire\Admin\AdminServiceCategoryComponent.php**   
-- **changed resources\views\livewire\admin\admin-service-category-component.blade.php**   
+- **php artisan make:model Service -m**     
+- **changed migration and model for Service**     
+- **changed model ServiceCategory**     
+- **php artisan migrate**     
+- **php artisan make:factory ServiceFactory**     
+ 
